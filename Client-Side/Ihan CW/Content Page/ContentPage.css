@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  padding-top: 50px;
+  background: #7f7fd5;
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+  padding-bottom: 20%;
+  padding-top: 10%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  overflow: hidden;
+  box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.567);
+  border-radius: 1em;
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.card__body h4 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.card__body ul {
+  margin-left: 1.5rem;
+}
