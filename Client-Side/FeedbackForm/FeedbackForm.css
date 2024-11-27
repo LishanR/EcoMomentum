@@ -1,231 +1,165 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body{
-    background: linear-gradient(to right,#395582,#7A828B);
-}
-
-.nav{
-    width: 100%;
-    height: 100dvh;
-    background-image: linear-gradient(rgba(8, 68, 220, 0.3),rgba(8, 68, 220, 0.3));
-    position: relative;
-    padding: 0.5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-nav.scrolled {
-    /* Slightly blurred background when scrolled */
-    background-color: rgba(22, 138, 173, 0.49); 
-}
-
-nav{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: background-color 0.3s ease-in-out;
-    z-index: 1000;
-}
-
-nav .logo{
-    width: 80px;
-}
-
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 40px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 20px;
-    position: relative;
-}
-
-nav ul li a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #b5e48c, #99d98c, #76c893);
-    z-index: 1;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.5s ease-in-out;
-}
-
-nav ul li a:hover::before {
-    transform: scaleX(1);
-}
-/* End of Nav Css */
-
-body{
-    background: url(/ImagesVideos/pexels-johannes-plenio-1118873.jpg);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #395582, #7a828b);
+  }
+  
+  body {
+    background: url(/Client-Side/ImagesVideos/pexels-johannes-plenio-1118873.jpg);
     background-size: 100% 100%;
-}
-
-.contentbla{
-    .container{
-        max-width: 650px;
-        height: fit-content;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 28px;
-        margin-top: 150px;
-        margin-bottom: 100px;
-        margin-left: 30%;
-        border-radius: 10px;
-        box-shadow: inset -2px 2px 2px white;
+  }
+  
+  .contentbla {
+    .container {
+      max-width: 650px;
+      height: fit-content;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 28px;
+      margin-top: 150px;
+      margin-bottom: 100px;
+      margin-left: 30%;
+      border-radius: 10px;
+      box-shadow: inset -2px 2px 2px white;
     }
-    
-    .form-title{
-        font-size: 26px;
-        font-weight: 600;
-        text-align: center;
-        padding-bottom: 6px;
-        color: white;
-        text-shadow: 2px 2px 2px black;
-        border-bottom: solid 1px white;
+  
+    .form-title {
+      font-size: 26px;
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 6px;
+      color: white;
+      text-shadow: 2px 2px 2px black;
+      border-bottom: solid 1px white;
     }
-    
-    .main-user-info{
-        display: flex;
-        flex-wrap: wrap;
+  
+    .main-user-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px 0;
+    }
+  
+    .user-input-box:nth-child(2n) {
+      justify-content: end;
+    }
+  
+    .user-input-box {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      padding-bottom: 15px;
+    }
+  
+    .user-input-box label {
+      width: 95%;
+      color: white;
+      font-size: 20px;
+      font-weight: 400;
+      margin: 5px 0;
+    }
+  
+    .user-input-box input {
+      height: 40px;
+      width: 95%;
+      border-radius: 7px;
+      outline: none;
+      border: 1px solid grey;
+      padding: 0 10px;
+    }
+  
+    div#feedback {
+      width: 100%;
+    }
+  
+    div#feedback textarea {
+      width: 100%;
+      border-radius: 7px;
+      align-items: center;
+      outline: none;
+      border: 1px solid grey;
+      padding: 20px 10px;
+    }
+  
+    .feedback-title {
+      color: white;
+      font-size: 24px;
+      font-weight: 600;
+      border-bottom: 1px solid white;
+    }
+  
+    .form-submit-btn input {
+      cursor: pointer;
+    }
+  
+    .form-submit-btn {
+      margin-top: 40px;
+    }
+  
+    .form-submit-btn input {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 20px;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      color: rgb(209, 209, 209);
+      background: rgba(63, 114, 76, 0.7);
+      transition: ease-in-out 0.2s;
+    }
+  
+    .form-submit-btn input:hover {
+      background: rgba(56, 204, 93, 0.7);
+      color: rgb(255, 255, 255);
+    }
+  
+    @media (max-width: 600px) {
+      .container {
+        min-width: 280px;
+      }
+  
+      .feedback-details-box {
+        min-width: 280px;
+      }
+  
+      .user-input-box {
+        margin-bottom: 12px;
+        width: 100%;
+      }
+  
+      .user-input-box:nth-child(2n) {
         justify-content: space-between;
-        padding: 20px 0;
-    }
-    
-    .user-input-box:nth-child(2n){
-        justify-content: end;
-    }
-    
-    .user-input-box{
+      }
+  
+      .center {
         display: flex;
-        flex-wrap: wrap;
-        width: 50%;
-        padding-bottom: 15px;
+        justify-content: space-between;
+        /* width: 100%; */
+        min-width: 280px;
+      }
+  
+      .main-user-info {
+        max-height: 380px;
+        overflow: auto;
+      }
+  
+      .main-user-info::-webkit-scrollbar {
+        width: 0;
+      }
     }
-    
-    .user-input-box label{
-        width: 95%;
-        color: white;
-        font-size: 20px;
-        font-weight: 400;
-        margin: 5px 0;
-    }
-    
-    .user-input-box input{
-        height: 40px;
-        width: 95%;
-        border-radius: 7px;
-        outline: none;
-        border: 1px solid grey;
-        padding: 0 10px;
-    }
-    
-    div#feedback{
-        width: 100%;
-    }
-    
-    div#feedback textarea{
-        width: 100%;
-        border-radius: 7px;
-        align-items: center;
-        outline: none;
-        border: 1px solid grey;
-        padding: 20px 10px;
-    }
-    
-    .feedback-title{
-        color:white;
-        font-size: 24px;
-        font-weight: 600;
-        border-bottom: 1px solid white;
-    }
-    
-    .form-submit-btn input{
-        cursor: pointer;
-    }
-    
-    .form-submit-btn{
-        margin-top: 40px;
-    }
-    
-    .form-submit-btn input{
-        display: block;
-        width: 100%;
-        margin-top: 10px;
-        font-size: 20px;
-        padding: 10px;
-        border:none;
-        border-radius: 3px;
-        color: rgb(209, 209, 209);
-        background: rgba(63, 114, 76, 0.7);
-        transition: ease-in-out 0.2s;
-    }
-    
-    .form-submit-btn input:hover{
-        background: rgba(56, 204, 93, 0.7);
-        color: rgb(255, 255, 255);
-    }
-    
-    @media(max-width: 600px){
-        .container{
-            min-width: 280px;
-        }
-    
-        .feedback-details-box{
-            min-width: 280px;
-        }
-    
-        .user-input-box{
-            margin-bottom: 12px;
-            width: 100%;
-        }
-    
-        .user-input-box:nth-child(2n){
-            justify-content: space-between;
-        }
-    
-        .center{
-            display: flex;
-            justify-content: space-between;
-            /* width: 100%; */
-            min-width: 280px;
-        }
-    
-        .main-user-info{
-            max-height: 380px;
-            overflow: auto;
-        }
-    
-        .main-user-info::-webkit-scrollbar{
-            width: 0;
-        }
-    }
-    
-    
-    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-    *{
+  
+    @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    .center{
+    .center {
       position: relative;
       top: 45%;
       left: 50%;
@@ -236,38 +170,38 @@ body{
       margin-bottom: 0;
       margin-left: 20px;
     }
-    .center .stars{
+    .center .stars {
       height: 150px;
       width: 500px;
       text-align: center;
     }
-    .stars input{
+    .stars input {
       display: none;
     }
-    .stars label{
+    .stars label {
       float: right;
       font-size: 100px;
       color: lightgrey;
       margin: 0 5px;
       text-shadow: 1px 1px #bbb;
     }
-    .stars label:before{
-      content: '★';
+    .stars label:before {
+      content: "★";
     }
-    .stars input:checked ~ label{
+    .stars input:checked ~ label {
       color: gold;
       text-shadow: 1px 1px #c60;
     }
     .stars:not(:checked) > label:hover,
-    .stars:not(:checked) > label:hover ~ label{
+    .stars:not(:checked) > label:hover ~ label {
       color: gold;
     }
     .stars input:checked > label:hover,
-    .stars input:checked > label:hover ~ label{
+    .stars input:checked > label:hover ~ label {
       color: gold;
       text-shadow: 1px 1px goldenrod;
     }
-    .stars .result:before{
+    .stars .result:before {
       position: absolute;
       content: "";
       width: 100%;
@@ -277,114 +211,36 @@ body{
       font-size: 30px;
       font-weight: 500;
       color: gold;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       display: none;
     }
-    .stars input:checked ~ .result:before{
+    .stars input:checked ~ .result:before {
       display: block;
     }
-    
-    .stars #one:checked ~ .result:before{
+  
+    .stars #one:checked ~ .result:before {
       content: "I hate it ";
     }
-    .stars #two:checked ~ .result:before{
-        content: "I don't like it ";
+    .stars #two:checked ~ .result:before {
+      content: "I don't like it ";
     }
-    
-    .stars #three:checked ~ .result:before{
-        content: "It's good ";
+  
+    .stars #three:checked ~ .result:before {
+      content: "It's good ";
     }
-    
-    .stars #four:checked ~ .result:before{
+  
+    .stars #four:checked ~ .result:before {
       content: "I like it ";
     }
-    
-    .stars #five:checked ~ .result:before{
-        content: "I love it ";
+  
+    .stars #five:checked ~ .result:before {
+      content: "I love it ";
     }
-    
-}
-
-/* Start of Footer Css  */
-footer{
-    background-color: rgba(245, 245, 245, 0.338);
-    display: flex;
-    border-top:2px solid #0F0F0F;
-    border-bottom:2px solid #0F0F0F;
-}
-
-footer div img{
-    width: 200px;
-    margin-left: 20px;
-}
-
-.navigation{
-    padding: 50px;
-    margin-left: 18%;
-    display: flex;
-    flex-direction: column; /* Change to column to stack items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text within the container */
-}
-
-.navigation p{
-    margin-top: 20px;
-}
-
-.navigation h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 20px; /* Add margin bottom for spacing */
-}
-
-.navigation ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none; /* Move list-style here to remove bullet points */
-    padding: 0; /* Remove default padding */
-}
-
-.navigation ul li{
-    margin-top: 5px;
-    margin-left: 20px;
-}
-
-.navigation ul li:first-child {
-    margin-left: 0; /* Remove left margin from the first list item */
-}
-
-.navigation ul li a{
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    color: #0F0F0F;
-    transition: ease-in-out 0.5s;
-}
-
-.navigation ul li a:hover{
-    color: #01465a;
-    text-decoration: underline;
-    transition: ease-in-out 0.5s;
-}
-
-.social{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 180px;
-    margin-bottom: 15px;
-    margin-left: 15%;
-}
-
-.social a{
-    margin: 5px;
-}
-
-/* ... (existing styles) ... */
-
-.error {
+  }
+  
+  .error {
     color: red;
     font-size: 14px;
     margin-top: 5px;
-}
+  }
+  
