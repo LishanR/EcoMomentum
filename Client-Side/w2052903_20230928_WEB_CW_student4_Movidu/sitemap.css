@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+*{
+	font-family: 'Poppins', sans-serif;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	
+	line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color:rgb(255, 255, 255);
+
+}
+#lpVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.text {                               /*container box*/
+	background-color: rgb(0,0,0);
+	background-color: beige; 
+	color: #31363F;
+	font-weight: bold;
+	position: absolute;
+	top: 200px;
+	left: 38px;
+	z-index: 2;
+	width: 95%;
+	padding: 40px;
+    opacity: 80%;
+} 
+.text svg {
+    width: 100%;
+    height: auto;
+}
+.node {
+    fill: transparent;
+	stroke: #43766C;
+    stroke-width: 5px;
+}
+.arrow {
+    fill: none;
+    stroke: #43766C;
+    stroke-width: 3px;
+	marker-end: url();
+}
+text{
+	fill: #2E4374;
+	font-size: 20px;
+}
+text :hover{
+	fill: #6901DC;
+}
+#text_box_text{
+	font-size: 50px;
+	text-align: center;
+}
+#paragraph_text{
+	font-size:20px;
+	font-weight:100;
+}
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .text {
+        top: 100px; /* Adjust top position for smaller screens */
+        left: 20px; /* Adjust left position for smaller screens */
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    #text_box_text {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    #paragraph_text {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+.nav{
+    width: 100%;
+    height: 100dvh;
+    background-image: linear-gradient(rgba(8, 68, 220, 0.3),rgba(8, 68, 220, 0.3));
+    position: relative;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.scrolled {
+    background-color: rgba(22, 138, 173, 0.49); /* Slightly blurred background when scrolled */
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+nav .logo{
+    width: 80px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2    0px;
+    position: relative;
+    font-weight: bold;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #b5e48c, #99d98c, #76c893);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Start of Footer Css  */
+footer{
+    background-color: #ffffffd6;
+    color: #0F0F0F;
+    height: auto;
+    width: 100%;
+    display: flex;
+    border-top:1px solid #0F0F0F;
+    border-bottom:1px solid #0F0F0F;
+    margin-top: 615px;
+    margin-right: 150px;
+    
+}
+
+footer div img{
+    width: 150px;
+    margin-left: 20px;
+    
+    
+}
+
+.navigation{
+    padding: 50px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column; /* Change to column to stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within the container */
+}
+
+.navigation h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+    
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none; /* Move list-style here to remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.navigation ul li{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.navigation ul li:first-child {
+    margin-left: 0; /* Remove left margin from the first list item */
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    font-size: 2px;
+    font-weight: 600;
+    color: #0F0F0F;
+    transition: ease-in-out 0.5s;
+}
+
+.navigation ul li a:hover{
+    color: #01465a;
+    text-decoration: underline;
+    transition: ease-in-out 0.5s;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center social icons horizontally */
+    margin-top: 20px; /* Add margin top for spacing */
+}
+
+.social a{
+    margin: 5px;
+}
+
+.navigation{
+    padding: 50px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column; /* Change to column to stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within the container */
+}
+
+.navigation h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none; /* Move list-style here to remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.navigation ul li{
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.navigation ul li:first-child {
+    margin-left: 0; /* Remove left margin from the first list item */
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 10px;
+    font-weight: 600;
+    color: #0F0F0F;
+    transition: ease-in-out 0.5s;
+}
+
+.navigation ul li a:hover{
+    color: #01465a;
+    text-decoration: underline;
+    transition: ease-in-out 0.5s;
+}
+
+.navigation p{
+    margin-top:30px;
+    margin-bottom: 0;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 200px;
+    margin-left: 13%;
+}
+
+.social a{
+    margin: 5px;
+}

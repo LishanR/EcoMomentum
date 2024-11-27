@@ -1,0 +1,122 @@
+body{
+	background: url("CW_images/image\ p.jpg") no-repeat;
+	background-size : cover;
+	background-attachment: fixed;
+}
+.div1{
+	display: flex;
+    justify-content: center;
+    opacity: 80%;
+}
+.text {
+	background-color: rgb(0,0,0);
+	background-color: #2C7865; 
+	color: white;
+	font-weight: bold;
+	border: 5px solid #90D26D;
+	position: relative;
+	top: 50px;
+	z-index: 2;
+	width: 50%;
+    max-width: 800px;
+    margin: auto;
+	padding: 25px; 
+	border-radius: 25px;
+    overflow: hidden;
+
+}
+.Name {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.text img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 400px;
+    border-radius: 10px;
+	position: relative;
+	
+}
+
+.info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info .information {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.info p {
+    font-size: 25px;
+    margin: 5px;
+}
+
+.task {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.task .tasksTitle {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.task p {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.task li {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.task a {
+    font-size: 20px;
+    margin-bottom: 20px;
+	
+}
+
+/* Back to home Button */
+.button-container {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    margin: 20px;
+  }
+  
+  .Home-page-btn {
+    text-decoration: none;
+    background-color: #7045c6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .Home-page-btn:hover {
+    background-color: #5f2dc5;
+  }
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .text {
+        width: 90%; /* Adjust width for smaller screens */
+         /* Center the box */
+    }
+    
+    .text img {
+        width: 100%; /* Make the image fill the container */
+        left: 0; /* Reset left position */
+    }
+}
