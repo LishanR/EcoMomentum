@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .content {
   text-align: center;
 }

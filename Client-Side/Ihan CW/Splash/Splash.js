@@ -10,5 +10,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function redirectToWebPage() {
-    window.location.href = '/HomePage/home.html';
+    window.location.href = '/Client-Side/HomePage/home.html';
 }

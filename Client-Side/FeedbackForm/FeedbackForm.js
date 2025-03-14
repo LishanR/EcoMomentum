@@ -98,7 +98,8 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault(); // Prevent form submission
 
         // Display a prompt with a "Thank you" message
-        alert('Thank you for your feedback!');
+        // alert('Thank you for your feedback!');
+        alert('Please note that the form is idle and does not submit any data! Data submission will be added soon.');
 
         // Optionally, reset the form after submission
         form.reset();
